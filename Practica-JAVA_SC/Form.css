@@ -1,0 +1,39 @@
+.logo{
+    float: left;
+}
+header{
+    background-color: #afbdb363;
+    height: 100px;
+    margin-top: -6px;
+}
+input,label{
+    float: none;
+    width: 100px;
+}
+body{
+    background:#bd9764c2;
+}
+#button {
+    padding: 0;
+    
+}
+.img1{
+    width: 283px;
+    height: 432px;
+}
+fieldset{
+    width: 50%;
+    float: left;
+}
+input{
+    width: 700px;
+}
+aside{
+    float: left;
+    padding: 62px;
+}
+footer{
+    background-color: #afbdb363;
+    padding: 67px;
+    margin-top: 920px;
+}
