@@ -7,12 +7,20 @@
     </head>
     <body>
         <h1>Galeria</h1>
-        <img id="imgp" src="imagenes/logo.png" alt="img" />
+        <div id="imgp">
+
+            <img id="0" class="mySlides" src="" width="410px" height="310px">
+            <img id="1" class="mySlides" src="" width="410px" height="310px">
+            <img id="2" class="mySlides" src="" width="410px" height="310px">
+            <img id="3" class="mySlides" src="" width="410px" height="310px" >
+            <img id="4" class="mySlides" src="" width="410px" height="310px">
+        
+        </div>
         <div class="botones">
 			<div>
-		        <button id="btn1">Atras</button>
-		        <button id="btn2">Iniciar</button>
-                <button id="btn3">Siguiente</button>
+		        <button id="btn1" onclick="plusDivs(-1)">Atras </button>
+		        <button id="btn2" onclick="iniciar()">Iniciar</button>
+                <button id="btn3" onclick="plusDivs(+1)">Siguiente</button>
 			</div>
     </body>
     <script src="Galeria.js"></script>

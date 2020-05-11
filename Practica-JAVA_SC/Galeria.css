@@ -1,15 +1,22 @@
 h1{
     text-align: center;
 }
+.mySlides {
+    display:none;
+    width: 100%;
+    margin: 90px 0;
+}
 html{
   background-color: darkgoldenrod;
 }
 #imgp{
-    height: 309px;
+    height: 420px;
     margin: 1px 0px 0px 445px;
     width: 400px;
     background-color: cadetblue;
+    overflow: hidden;
 }
+
 .botones{
     margin: 46px 0px 0px 323px;
 }

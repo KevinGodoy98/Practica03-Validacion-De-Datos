@@ -18,12 +18,17 @@ body{
     
 }
 .img1{
-    width: 283px;
-    height: 432px;
+    width: 426px;
+    height: 458px;
+    float: right;
+    margin-right: -422px;
+    margin-top: 28px;
 }
 fieldset{
-    width: 50%;
-    float: left;
+    width: 12%;
+    margin-top: -468px;
+    float: right;
+    margin-left: -265px
 }
 input{
     width: 700px;
@@ -35,5 +40,13 @@ aside{
 footer{
     background-color: #afbdb363;
     padding: 67px;
-    margin-top: 920px;
+    margin-top: 491px;
+}
+.error {
+    color: red;
+    font-size: 8px;
+    }
+h2{
+    margin-left: -251px;
+    margin-top: -37px;
 }
