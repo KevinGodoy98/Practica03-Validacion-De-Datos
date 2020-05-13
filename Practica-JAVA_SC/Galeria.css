@@ -10,11 +10,10 @@ html{
   background-color: darkgoldenrod;
 }
 #imgp{
-    height: 420px;
+    height: 310px;
     margin: 1px 0px 0px 445px;
     width: 400px;
     background-color: cadetblue;
-    overflow: hidden;
 }
 
 .botones{
