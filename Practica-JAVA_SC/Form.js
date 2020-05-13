@@ -57,8 +57,10 @@ function validar() {
 }
 if ((suma % 10 === 0) && (suma > 0)) {
   alert('Cedula Valida.');
+  return true
 } else {
   alert('revisar el campo cedula:invalida.');
+  return false
 }
 }
 function ValidarNombre(){
@@ -66,10 +68,14 @@ function ValidarNombre(){
     nombre2 = nombre1.replace(/ /g, ""); 
 
     if (isNaN(nombre1) && (nombre1 != nombre2) && (nombre1.slice(-1) != " ")) {
+        
         alert('Nombre valido')
         cont = 1;
+        return true
     }else{
+        
         alert('revisar el campo nombre:invalido')
+        return false
     }
 }
 
@@ -78,33 +84,39 @@ function ValidarApellido(){
     apellido2 = apellido1.replace(/ /g, ""); 
 
     if (isNaN(apellido1) && (apellido1 != apellido2) && (apellido1.slice(-1) != " ")) {
+        
         alert('apellido valido')
         cont = 1;
+        return true
+
     }else{
+        
         alert('revisar el campo apellido:invalido')
+        return false
     }
 }
 function ValidarTelefono(){
     ndigitos = document.getElementById("telefono").value;
      if(ndigitos.length==10){
         alert('Telefono Valido')
+        return true
     }else{
         alert('Telefono Invalido')
+        return false
      }
 }
 function ValidarFechaNacimiento(){
-    cont=1;
     var vFechanac = document.getElementById("fechaNacimiento").value.split('/');
     var fechaNac = new Date(vFechanac[2], vFechanac[1], vFechanac[0]);
     if (vFechanac.length == 3 && fechaNac
         && vFechanac[0] == fechaNac.getDate()
-        && vFechanac[1] == [fechaNac.getMonth()+cont]
+        && vFechanac[1] == fechaNac.getMonth()
         && vFechanac[2] == fechaNac.getFullYear()) {
         alert('Fecha Valida')
-        return false;
+        return true;
     } else {
         alert('Fecha mal ingresada, Revisar Formato')
-        return true;
+        return false;
     }
     
 }
@@ -116,11 +128,15 @@ function ValidarCorreo(){
         contC = 0;
     } else {
         if (!(vcorreo[1] == 'ups.edu.ec') && !(vcorreo[1] == 'est.ups.edu.ec')) {
+            
             alert('Correo Invalido')
             contC = 0;
+            return true
         } else {
+            
             alert('Correo Valido')
             contC = 1;
+            return false
         }
     }
 }
@@ -163,11 +179,8 @@ function ValidarContrasena(){
     return false;
   
 }
-function EntrarPHP(form){
+function EntrarPHP(){
    if(Validar()==true && ValidarCedula()==true && ValidarNombre()==true && ValidarApellido()==true && ValidarTelefono()==true && ValidarFechaNacimiento()==true && ValidarCorreo()==true && ValidarContrasena()==true){
-    if(form.palabra.value==""||form.palabra.value=="Registrar")
-    alert("error")
-    else
-    window.location.href = 'Registro.php?x=search/search&palabra='+form.palabra.value;
-} 
+      
+}
 } 
